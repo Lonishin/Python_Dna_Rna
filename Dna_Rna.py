@@ -17,7 +17,7 @@ class Rna:
 
     def gc(self):
         gc_amount = (self.sequence.count("C") + self.sequence.count("G")) / len(self.sequence)
-        return round(gc_amount, 2)
+        return '{0:.2f}%'.format(round(gc_amount, 2)*100)
 
     def __repr__(self):
         return self.sequence
@@ -40,7 +40,7 @@ class Dna:
 
     def gc(self):
         gc_amount = (self.sequence.count("C") + self.sequence.count("G")) / len(self.sequence)
-        return round(gc_amount, 2)
+        return '{0:.2f}%'.format(round(gc_amount, 2)*100)
 
     def reverse_complement(self):
         complement_dictionary = {'A': 'T', 'C': 'G', 'T': 'A', 'G': 'C'}
