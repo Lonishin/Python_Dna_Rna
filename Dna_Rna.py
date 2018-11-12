@@ -25,7 +25,7 @@ class Rna:
 
 class Dna:
     def __init__(self, sequence):
-        assert isinstance(seq, str)
+        assert isinstance(sequence, str)
         self.sequence = sequence.upper()
         self.complement = ""
 
