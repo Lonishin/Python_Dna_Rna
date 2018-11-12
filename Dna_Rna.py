@@ -1,5 +1,6 @@
 class Rna:
     def __init__(self, seq):
+        assert isinstance(seq, str)
         self.sequence = seq.upper()
         self.complement = ""
         if 'A' or 'C' or 'G' or 'T' in self.sequence:
@@ -24,6 +25,7 @@ class Rna:
 
 class Dna:
     def __init__(self, sequence):
+        assert isinstance(seq, str)
         self.sequence = sequence.upper()
         self.complement = ""
 
